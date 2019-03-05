@@ -1,0 +1,10 @@
+{
+  "db_driver": "mongodb",  
+  "db_main_host": "",
+  "db_main_name": "",  
+  "db_main_collection": "",
+  "db_task_name": "",  
+  "db_main_user": "",
+  "db_main_password": "",
+  "db_auth_source": "e.g admin"
+}
