@@ -14,7 +14,7 @@ queueObj.define(config.db_task_name, (job, done) => {
 (async function () {
   try {
     await queuePromise();
-    await requeue(config.db_task_name);
+    await requeue(config.db_task_name); // Re-queue any jobs that are stuck in 'running' status
     await queueObj.start();
     console.log('Queue client is ready');
   } catch (e) {
