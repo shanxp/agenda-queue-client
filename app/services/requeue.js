@@ -8,7 +8,7 @@ const now = new Date(Date.now() - 60000); // -1 min
 
 const requeue = (jobName) => {
   // Return promise
-  return MongoClient.connect(config.connection)
+  return MongoClient.connect(config.connection, { useNewUrlParser: true })
     .then((client) => {
       const db = client.db(config.db_main_name);
       const collection = db.collection(config.db_main_collection);

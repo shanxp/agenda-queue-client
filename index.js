@@ -1,3 +1,4 @@
+/* eslint-disable wrap-iife */
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable no-console */
 
@@ -21,4 +22,4 @@ queueObj.define(config.db_task_name, (job, done) => {
     console.error('Error when starting the app', e);
     process.exit(1);
   }
-}());
+})();
